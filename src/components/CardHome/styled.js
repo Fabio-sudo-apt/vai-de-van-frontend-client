@@ -20,7 +20,12 @@ export const CardHomeWrapper = styled.div`
   cursor: pointer;
   margin: 1rem;
   transition: 0.3s;
+  max-width: 90%;
 
+  @media (max-width: 768px) {
+    width: 90%;
+    flex-direction: column;
+  }
   &:hover {
     transform: scale(1.05);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,

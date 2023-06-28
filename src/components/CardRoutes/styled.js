@@ -23,6 +23,10 @@ export const CardRouteWrapper = styled.div`
   transition: 0.3s;
   text-align: le;
 
+  @media (max-width: 368px) {
+    flex-direction: column;
+    width: 90%;
+  }
   &:hover {
     transform: scale(1.05);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -70,6 +74,12 @@ export const CardRouteWrapper = styled.div`
     font-weight: 700;
     text-align: left;
     margin: 0 !important;
+
+    @media (max-width: 368px) {
+      flex-direction: column;
+      width: 60%;
+      font-size: 1.6rem;
+    }
   }
 
   .valueTravel {
@@ -84,5 +94,11 @@ export const CardRouteWrapper = styled.div`
     color: #4caf50;
     align-items: center;
     font-weight: 900;
+
+    @media (max-width: 368px) {
+      flex-direction: column;
+      width: 60%;
+      font-size: 1.4rem;
+    }
   }
 `;

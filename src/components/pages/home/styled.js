@@ -19,4 +19,9 @@ export const HomeWrapper = styled.div`
 export const BodyCitys = styled.div`
   display: flex;
   flex-direction: row;
+  max-width: 100%;
+  @media (max-width: 368px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;

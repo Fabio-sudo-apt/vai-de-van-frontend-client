@@ -8,7 +8,7 @@ export const HomeSearchWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(https://media1.giphy.com/media/J1ZajKJKzD0PK/giphy.gif?cid=ecf05e47fjrn5dk8t97f2wswiygid3ol6r9czem2rmsv7h3s&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-image: url(https://cdn.wallpapersafari.com/16/32/AsS1PB.jpg);
   background-size: 100%;
   background-position: 0px;
   height: 60vh;
