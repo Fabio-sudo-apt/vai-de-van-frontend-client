@@ -2,7 +2,8 @@ import React from "react";
 import { SelectPicker } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 
-export const SelectSuggestion = ({ placeholder, label }) => {
+export const SelectSuggestion = ({ placeholder, label}) => {
+
   const data = [
     "Eugenia",
     "Bryan",

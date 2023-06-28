@@ -5,13 +5,13 @@ export const HomeSearchWrapper = styled.div`
     background-image: none;
   }
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  background-image: url(https://media1.giphy.com/media/J1ZajKJKzD0PK/giphy.gif?cid=ecf05e47fjrn5dk8t97f2wswiygid3ol6r9czem2rmsv7h3s&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  justify-content: flex-start;
+  background-image: url(https://images.unsplash.com/photo-1594495894542-a46cc73e081a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
   background-size: 100%;
   background-position: 0px;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 `;
 
@@ -36,26 +36,25 @@ export const HomeSearchTop = styled.div`
 export const HomeSearchInto = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
+  justify-content: space-around;
+  background-color: white;
   border-radius: 10px;
-  height: 30%;
-  width: 80%;
+  height: 80%;
+  width: 40%;
+  margin-left:15px;
 
   .titleHomeSeach {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 40%;
-
     h2 {
       font-size: 1.5rem;
     }
   }
   .formSearch {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -74,4 +73,36 @@ export const HomeSearchInto = styled.div`
     align-items: center;
     justify-content: center;
   }
+`;
+
+export const ContainerTickets = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#f2f4f6;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 5px 5px 5px;
+`;
+
+export const TicketWrapper = styled.div`
+  margin-top:1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+  background-position: 0px;
+  width: 100%;
+`;
+
+export const DivForm = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+border: 5px solid red;
 `;

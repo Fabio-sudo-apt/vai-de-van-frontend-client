@@ -6,7 +6,7 @@ export const HomeWrapper = styled.div`
   align-items: center;
   height: auto;
   margin-top: 4%;
-  width: 100vw;
+  width: 100%;
   background-color: white;
 
   .citys {
