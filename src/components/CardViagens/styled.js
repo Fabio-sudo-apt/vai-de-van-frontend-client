@@ -28,7 +28,7 @@ align-items: center;
 justify-content: space-around;
 background-color: white;
 border-radius: 10px;
-width: 90%;
+width: 75%;
 padding: 10px;
 box-shadow: 5px 5px 5px;
 

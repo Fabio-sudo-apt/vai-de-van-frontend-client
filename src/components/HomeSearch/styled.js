@@ -11,7 +11,7 @@ export const HomeSearchWrapper = styled.div`
   background-image: url(https://images.unsplash.com/photo-1594495894542-a46cc73e081a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
   background-size: 100%;
   background-position: 0px;
-  height: 70vh;
+  height: 85vh;
   width: 100%;
 `;
 
@@ -36,7 +36,7 @@ export const HomeSearchTop = styled.div`
 export const HomeSearchInto = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: white;
   border-radius: 10px;
   height: 80%;
@@ -97,6 +97,14 @@ export const TicketWrapper = styled.div`
   width: 100%;
 `;
 
+export const TitleHomeSeach = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+
 export const DivForm = styled.div`
   display: flex;
   flex-direction: column;
@@ -104,5 +112,4 @@ export const DivForm = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 5px solid red;
 `;

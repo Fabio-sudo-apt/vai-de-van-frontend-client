@@ -6,13 +6,15 @@ import { BodyCitys, HomeWrapper } from "./styled";
 export const Home = () => {
   return (
     <HomeWrapper>
-      <Header />
+
+      <Header/>
+
       <div className="citys">
         <h3 style={{ margin: "1rem" }}>Destinos mais requisitados</h3>
         <BodyCitys>
           <CardCitys
             nameCity="Iguatu"
-            url="https://consig.ce.gov.br/wp-content/uploads/elementor/thumbs/iguatu-pil6xjc0vi7zk6jte72z9era0cqit2d6tvzbmfe3gg.jpg"
+            url="https://cdn.direcaoconcursos.com.br/uploads/2022/03/iguatu-ce.jpg"
           />
           <CardCitys
             nameCity="Fortaleza"

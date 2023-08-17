@@ -1,0 +1,40 @@
+{
+  "Viagens": [
+    {
+      "id": 1,
+      "nome": "Cedro",
+      "destino": "Icó",
+      "data": "22/06/2023"
+    },
+    {
+      "id": 2,
+      "nome": "Icó",
+      "destino": "Cedro",
+      "data": "22/06/2023"
+    },
+    {
+      "id": 3,
+      "nome": "Cedro",
+      "destino": "Varzea Alegre",
+      "data": "22/06/2023"
+    },
+    {
+      "id": 4,
+      "nome": "Varzea Alegre",
+      "destino": "Cedro",
+      "data": "22/06/2023"
+    },
+    {
+      "id": 5,
+      "nome": "Varzea Alegre",
+      "destino": "Icó",
+      "data": "22/06/2023"
+    },
+    {
+      "id": 6,
+      "nome": "Varzea Alegre",
+      "destino": "Cedro",
+      "data": "22/06/2023"
+    }
+  ]
+}
