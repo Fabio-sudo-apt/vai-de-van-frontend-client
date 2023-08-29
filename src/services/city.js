@@ -1,11 +1,11 @@
-import axios from "axios";
+import instance from "../core/createAxios";
 
 class CityService {
-  constructor() {}
+  // constructor() {}
 
   async getCities() {
-    return axios.get(`http://localhost:4000/city`);
+    return instance.get(`/route`);
   }
 }
 
-export default new CityService();
+export default CityService();

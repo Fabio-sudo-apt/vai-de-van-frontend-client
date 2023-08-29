@@ -6,12 +6,12 @@ export const HomeSearchWrapper = styled.div`
   }
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: center;
   background-image: url(https://images.unsplash.com/photo-1594495894542-a46cc73e081a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
   background-size: 100%;
   background-position: 0px;
-  height: 85vh;
+  height: 80vh;
   width: 100%;
 `;
 
@@ -25,7 +25,7 @@ export const HomeSearchTop = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -35,19 +35,19 @@ export const HomeSearchTop = styled.div`
 
 export const HomeSearchInto = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   background-color: white;
   border-radius: 10px;
-  height: 80%;
-  width: 40%;
-  margin-left: 15px;
+  height: 15%;
+  width: 80%;
+  margin: 15px;
 
   .titleHomeSeach {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     h2 {
       font-size: 1.5rem;
     }
@@ -57,19 +57,17 @@ export const HomeSearchInto = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
   @media (max-width: 768px) {
     .formSearch {
       flex-direction: column;
     }
-
     .titleHomeSeach {
       margin-bottom: 3rem;
       text-align: center;
     }
-
     align-items: center;
     justify-content: center;
   }
@@ -104,12 +102,20 @@ export const TitleHomeSeach = styled.div`
   justify-content: center;
 `;
 
-
 export const DivForm = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;  
   width: 100%;
   height: 100%;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+`

@@ -1,14 +1,15 @@
 import * as React from "react";
 import { SelectSuggestion } from "../DefaultSuggestion";
-import { Button } from 'rsuite';
+import { Button } from "rsuite";
 import {
   HomeSearchInto,
   HomeSearchWrapper,
   DivForm,
   TitleHomeSeach,
-  HomeSearchTop
+  HomeSearchTop,
+  Form,
 } from "./styled";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo-horizontal.png";
 import { DatePicker, Stack } from "rsuite";
 import InputLabel from "@mui/material/InputLabel";
@@ -30,7 +31,7 @@ const HomeSearch = (Tenta) => {
   //busca no json as passagens com a mesma origem e destino
   const Carregar = (e) => {
     e.preventDefault();
-    navigate('/teste',{replace: true, state:{travel}})
+    navigate("/teste", { replace: true, state: { travel } });
   };
 
   //verifica se a data é anterior a data de hoje
@@ -59,21 +60,20 @@ const HomeSearch = (Tenta) => {
       <HomeSearchTop>
         <img src={Logo} width="200px" alt="description" />
       </HomeSearchTop>
-
       <HomeSearchWrapper>
-
         <HomeSearchInto>
-
-          <TitleHomeSeach><h2>PASSAGENS INTERMUNICIPAIS</h2></TitleHomeSeach>
-          <form onSubmit={Carregar}>
+          <Form onSubmit={Carregar}>
             <DivForm>
-              <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
+              <FormControl
+                variant="filled"
+                sx={{ m: 1, width: 250, borderRadius: 18, border: 0 }}
+              >
                 <InputLabel id="demo-simple-select-filled-label">
-                  Origem
+                  De onde você está saindo?
                 </InputLabel>
                 <Select
-                  labelId="demo-simple-select-filled-label"
-                  id="demo-simple-select-filled"
+                  labelId="demo-multiple-name-label"
+                  id="demo-multiple-name"
                   name="origem"
                   value={travel.origem}
                   onChange={valorInput}
@@ -86,9 +86,12 @@ const HomeSearch = (Tenta) => {
                   <MenuItem value={"Varzea Alegre"}>Varzea Alegre</MenuItem>
                 </Select>
               </FormControl>
-              <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
+              <FormControl
+                variant="filled"
+                sx={{ m: 1, width: 250, borderRadius: 18, border: 0 }}
+              >
                 <InputLabel id="demo-simple-select-filled-label">
-                  Destino
+                  Para onde você vai?
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-filled-label"
@@ -105,7 +108,7 @@ const HomeSearch = (Tenta) => {
                   <MenuItem value={"Varzea Alegre"}>Varzea Alegre</MenuItem>
                 </Select>
               </FormControl>
-              <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
+              <FormControl variant="filled" sx={{ m: 1, width: 250 }}>
                 <Stack
                   direction="column"
                   alignItems="flex-start"
@@ -121,13 +124,24 @@ const HomeSearch = (Tenta) => {
                   />
                 </Stack>
               </FormControl>
-              <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
-                <Button appearance="default" active type="submit" >
-                  Enviar
+              <FormControl variant="filled" sx={{ m: 1, width: 200 }}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  sx={{
+                    backgroundColor: "#ff5722",
+                    color: "white",
+                    "&:hover": {
+                      backgroundColor: "#e64a19",
+                    },
+                  }}
+                  type="submit"
+                >
+                  Busca passagem
                 </Button>
               </FormControl>
             </DivForm>
-          </form>
+          </Form>
         </HomeSearchInto>
       </HomeSearchWrapper>
     </div>
